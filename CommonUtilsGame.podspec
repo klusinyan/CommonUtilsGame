@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
     s.license      = { :type => 'MIT', :file => 'LICENSE' }
     s.author       = { 'Karen Lusinyan' => 'karen.lusinyan.developerios@gmail.com' }
     s.platform     = :ios, '7.0'
-    s.source       = { :git => 'https://klusinyan/commonutilsgame.git', :tag => s.version.to_s }
+    s.source       = { :git => 'https://mrcararia@bitbucket.org/mrklteam/commonutilsgame.git', :tag => s.version.to_s }
 
     s.requires_arc = true
     s.prefix_header_file = 'Pod/Classes/Pod-Prefix.pch'
