@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
     s.name         = 'CommonUtilsGame'
-    s.version      = '0.1.0'
+    s.version      = '0.1.1'
     s.summary      = 'CommonUtils extension for Game.'
-    s.homepage     = 'https://bitbucket.org/klusinyan/commonutilsgame/'
+    s.homepage     = 'https://bitbucket.org/mrklteam/commonutilsgame/'
     s.license      = { :type => 'MIT', :file => 'LICENSE' }
     s.author       = { 'Karen Lusinyan' => 'karen.lusinyan.developerios@gmail.com' }
     s.platform     = :ios, '7.0'
@@ -13,6 +13,10 @@ Pod::Spec.new do |s|
     s.source_files = 'Pod/Classes/**/*.{h,m}'
 
     s.resource_bundles = { 'Pod' => ['Pod/Classes/GameCenter/CommonGameCenter.bundle'] }
+
+    #-------- Pods --------    
+	s.dependency 'CommonUtils'
+    #-------- Pods --------    
 
     #-------- Frameworks --------
     s.frameworks = 'GameKit'

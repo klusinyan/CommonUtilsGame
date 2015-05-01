@@ -1,5 +1,38 @@
 PODS:
-  - CommonUtilsGame (0.1.0)
+  - AFNetworking (2.5.3):
+    - AFNetworking/NSURLConnection (= 2.5.3)
+    - AFNetworking/NSURLSession (= 2.5.3)
+    - AFNetworking/Reachability (= 2.5.3)
+    - AFNetworking/Security (= 2.5.3)
+    - AFNetworking/Serialization (= 2.5.3)
+    - AFNetworking/UIKit (= 2.5.3)
+  - AFNetworking/NSURLConnection (2.5.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.5.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.5.3)
+  - AFNetworking/Security (2.5.3)
+  - AFNetworking/Serialization (2.5.3)
+  - AFNetworking/UIKit (2.5.3):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - Canvas (0.1.2)
+  - CommonUtils (1.5.2-beta13):
+    - AFNetworking
+    - Canvas
+    - CommonUtils/no-arc (= 1.5.2-beta13)
+    - Google-Mobile-Ads-SDK
+  - CommonUtils/no-arc (1.5.2-beta13):
+    - AFNetworking
+    - Canvas
+    - Google-Mobile-Ads-SDK
+  - CommonUtilsGame (0.1.0):
+    - CommonUtils (~> 1.5.2-beta)
+  - Google-Mobile-Ads-SDK (7.2.1)
 
 DEPENDENCIES:
   - CommonUtilsGame (from `../`)
@@ -9,6 +42,10 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  CommonUtilsGame: b2cf1edf4bbf082f3df8f31f42de17ae93f64061
+  AFNetworking: e1d86c2a96bb5d2e7408da36149806706ee122fe
+  Canvas: eb861e3b555d032648146c8ffda1a5dea40059ca
+  CommonUtils: 3db92c12ffe3b54ce659acbc4cc707f956f6d820
+  CommonUtilsGame: 3bbbf7ab9703ae9c01d6acb34af221c5f6335859
+  Google-Mobile-Ads-SDK: bff6964e7702feb6289014451114e7044a4c26ba
 
 COCOAPODS: 0.35.0

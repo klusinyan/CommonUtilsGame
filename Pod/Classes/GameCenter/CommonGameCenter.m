@@ -415,7 +415,10 @@ typedef void(^CompletionWhenGameViewControllerDisappeared)(void);
 - (void)reportScore:(int64_t)score forLeaderboard:(NSString *)identifier
 {
     NSString *assert = [NSString stringWithFormat:@"Assertion in %@ 'identifier' can not be nil", NSStringFromSelector(_cmd)];
+#ifdef DEBUG
     NSAssert(identifier, assert);
+#endif
+    if (assert == nil) return;
     
     if ([GKLocalPlayer localPlayer].isAuthenticated && [self leaderboardExistsWithIdentifier:identifier]) {
         // report score to game center
@@ -526,10 +529,12 @@ typedef void(^CompletionWhenGameViewControllerDisappeared)(void);
 
 - (void)print
 {
+#ifdef DEBUG
     for (NSString *identifier in [self.scores allKeys]) {
         GKScore *local = [self.scores objectForKey:identifier];
         DebugLog(@"leaderbaord %@ player score %@", identifier, @(local.value));
     }
+#endif
 }
 
 @end
