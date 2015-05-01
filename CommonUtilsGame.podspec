@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
     s.resource_bundles = { 'Pod' => ['Pod/Classes/GameCenter/CommonGameCenter.bundle'] }
 
     #-------- Pods --------    
-	s.dependency 'CommonUtils'
+	s.dependency 'CommonUtils', '~> 1.5.2-beta'
     #-------- Pods --------    
 
     #-------- Frameworks --------
