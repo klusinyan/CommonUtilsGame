@@ -1,0 +1,14 @@
+PODS:
+  - CommonUtilsGame (0.1.0)
+
+DEPENDENCIES:
+  - CommonUtilsGame (from `../`)
+
+EXTERNAL SOURCES:
+  CommonUtilsGame:
+    :path: ../
+
+SPEC CHECKSUMS:
+  CommonUtilsGame: b2cf1edf4bbf082f3df8f31f42de17ae93f64061
+
+COCOAPODS: 0.35.0
