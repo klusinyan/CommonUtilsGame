@@ -21,16 +21,16 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - Canvas (0.1.2)
-  - CommonUtils (1.5.2-beta13):
+  - CommonUtils (1.5.2-beta14):
     - AFNetworking
     - Canvas
-    - CommonUtils/no-arc (= 1.5.2-beta13)
+    - CommonUtils/no-arc (= 1.5.2-beta14)
     - Google-Mobile-Ads-SDK
-  - CommonUtils/no-arc (1.5.2-beta13):
+  - CommonUtils/no-arc (1.5.2-beta14):
     - AFNetworking
     - Canvas
     - Google-Mobile-Ads-SDK
-  - CommonUtilsGame (0.1.0):
+  - CommonUtilsGame (0.1.1):
     - CommonUtils (~> 1.5.2-beta)
   - Google-Mobile-Ads-SDK (7.2.1)
 
@@ -44,8 +44,8 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AFNetworking: e1d86c2a96bb5d2e7408da36149806706ee122fe
   Canvas: eb861e3b555d032648146c8ffda1a5dea40059ca
-  CommonUtils: 3db92c12ffe3b54ce659acbc4cc707f956f6d820
-  CommonUtilsGame: 3bbbf7ab9703ae9c01d6acb34af221c5f6335859
+  CommonUtils: 7ec1155548f647487fdb84921e0962227f0805ac
+  CommonUtilsGame: d4ad0f0c450b61c7de83991eef36696fd7cd7f22
   Google-Mobile-Ads-SDK: bff6964e7702feb6289014451114e7044a4c26ba
 
 COCOAPODS: 0.35.0
