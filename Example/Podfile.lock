@@ -35,17 +35,20 @@ PODS:
   - Google-Mobile-Ads-SDK (7.2.1)
 
 DEPENDENCIES:
+  - CommonUtils (from `../../CommonUtils`)
   - CommonUtilsGame (from `../`)
 
 EXTERNAL SOURCES:
+  CommonUtils:
+    :path: ../../CommonUtils
   CommonUtilsGame:
     :path: ../
 
 SPEC CHECKSUMS:
   AFNetworking: e1d86c2a96bb5d2e7408da36149806706ee122fe
   Canvas: eb861e3b555d032648146c8ffda1a5dea40059ca
-  CommonUtils: 7ec1155548f647487fdb84921e0962227f0805ac
-  CommonUtilsGame: d4ad0f0c450b61c7de83991eef36696fd7cd7f22
+  CommonUtils: 81d829f16de6c68fc0dc7bc0786cea66d6670b0f
+  CommonUtilsGame: 8b597a18d5fb1a171e52ae19adbe25470b941bf1
   Google-Mobile-Ads-SDK: bff6964e7702feb6289014451114e7044a4c26ba
 
 COCOAPODS: 0.35.0

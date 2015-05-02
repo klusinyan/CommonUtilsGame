@@ -2,12 +2,17 @@
 //  Copyright (c) 2014 Karen Lusinyan. All rights reserved.
 
 #import "AppDelegate.h"
+#import "DirectoryUtils.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    DebugLog(@"bundle:name %@", [DirectoryUtils bundleWithName:@"CommonUtilsGame.bundle"]);
+    UIImage *image = [DirectoryUtils imageWithName:@"defaultPhoto" bundleName:@"CommonUtilsGame.bundle"];
+    
     return YES;
 }
 							

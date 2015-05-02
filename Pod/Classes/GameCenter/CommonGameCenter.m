@@ -5,7 +5,7 @@
 #import "CommonSerilizer.h"
 #import "DirectoryUtils.h"
 
-#define kBundleName @"CommonGameCenter.bundle"
+#define kBundleName @"CommonUtilsGame.bundle"
 
 NSString * const CommonGameCenterWillStartSynchronizing  = @"CommonGameCenterWillStartSynchronizing";
 NSString * const CommonGameCenterDidFinishSynchronizing  = @"CommonGameCenterDidFinishSynchronizing";

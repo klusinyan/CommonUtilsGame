@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = 'CommonUtilsGame'
-    s.version      = '0.1.1'
+    s.version      = '0.1.2'
     s.summary      = 'CommonUtils extension for Game.'
     s.homepage     = 'https://bitbucket.org/mrklteam/commonutilsgame/'
     s.license      = { :type => 'MIT', :file => 'LICENSE' }
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
     s.prefix_header_file = 'Pod/Classes/Pod-Prefix.pch'
     s.source_files = 'Pod/Classes/**/*.{h,m}'
 
-    s.resource_bundles = { 'Pod' => ['Pod/Classes/GameCenter/CommonGameCenter.bundle'] }
+    s.resource_bundles = { 'CommonUtilsGame' => ['Pod/Assets/Images/*.*'] }
 
     #-------- Pods --------    
 	s.dependency 'CommonUtils', '~> 1.5.2-beta'

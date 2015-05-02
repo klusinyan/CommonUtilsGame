@@ -1,8 +1,6 @@
 //  Created by Karen Lusinyan on 14/04/15.
 //  Copyright (c) 2015 Karen Lusinyan. All rights reserved.
 
-#define kLibVersion @"0.1.1"
-
 #import "CommonUtilsGameVersion.h"
 
 @implementation CommonUtilsGameVersion
