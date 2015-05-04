@@ -10,8 +10,8 @@
 {
     // Override point for customization after application launch.
     
-    DebugLog(@"bundle:name %@", [DirectoryUtils bundleWithName:@"CommonUtilsGame.bundle"]);
-    UIImage *image = [DirectoryUtils imageWithName:@"defaultPhoto" bundleName:@"CommonUtilsGame.bundle"];
+    //DebugLog(@"bundle:name %@", [DirectoryUtils bundleWithName:@"CommonUtilsGame.bundle"]);
+    //UIImage *image = [DirectoryUtils imageWithName:@"defaultPhoto" bundleName:@"CommonUtilsGame.bundle"];
     
     return YES;
 }
