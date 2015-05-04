@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = 'CommonUtilsGame'
-    s.version      = '0.1.2'
+    s.version      = '1.0.0'
     s.summary      = 'CommonUtils extension for Game.'
     s.homepage     = 'https://bitbucket.org/mrklteam/commonutilsgame/'
     s.license      = { :type => 'MIT', :file => 'LICENSE' }
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
     s.resource_bundles = { 'CommonUtilsGame' => ['Pod/Assets/Images/*.*'] }
 
     #-------- Pods --------    
-	s.dependency 'CommonUtils', '~> 1.5.2-beta'
+	s.dependency 'CommonUtils'
     #-------- Pods --------    
 
     #-------- Frameworks --------
