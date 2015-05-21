@@ -35,7 +35,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
     [CommonGameCenter reportScore:100 forLeaderboard:@"My-Leaderboard"];
 
     
-## Step 3
+## Step 4
     That's it! 
     Enjoy
 
