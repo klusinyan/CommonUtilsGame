@@ -1,6 +1,5 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
 target 'CommonUtilsGame', :exclusive => true do
-  pod "CommonUtilsGame", :path => "../"
-  pod 'CommonUtils', :path =>  '../../CommonUtils'
+  pod 'CommonUtilsGame', :path => '../'
 end

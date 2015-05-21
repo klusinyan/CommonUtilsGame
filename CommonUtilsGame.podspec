@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = 'CommonUtilsGame'
-    s.version      = '1.0.0'
+    s.version      = '1.0.1'
     s.summary      = 'CommonUtils extension for Game.'
     s.homepage     = 'https://bitbucket.org/mrklteam/commonutilsgame/'
     s.license      = { :type => 'MIT', :file => 'LICENSE' }
