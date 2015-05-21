@@ -9,8 +9,41 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+## Step 1
+    Put this in your AppDelegate.m
+
+    // If you already setup leaderboard in iTunesConnect -> pass the leaderboard's identifier
+    
+    static NSString * LeaderboardIdentifier = @"My-Leaderboard";
+    
+    [CommonGameCenter createLeaderboardIfNotExists:LeaderboardIdentifier attributes:nil];
+    
+    // ... setup more leaderboars
+    
+    [CommonGameCenter startAuthenticationWithCompletion:^(BOOL authenticated, NSError *error) {
+        // game center started either offline or online
+    }];
+    
+## Step 2
+    // Obtain score from leaderboard (returns GKScore)
+    [CommonGameCenter obtainScoreForLeaderboard:@"My-Leaderboard"]
+    
+    // Report score to leaderboard
+    [CommonGameCenter reportScore:100 forLeaderboard:@"My-Leaderboard"];
+
+    
+## Step 3
+    That's it! 
+    Enjoy
+
+## New features
+    Comming soon :-)
+
 ## Requirements
 
+    Requires iOS 7 and later
+    Written in ARC
+    
 ## Installation
 
 CommonUtilsGame is available through [CocoaPods](http://cocoapods.org). To install
