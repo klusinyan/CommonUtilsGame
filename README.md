@@ -23,8 +23,11 @@ To run the example project, clone the repo, and run `pod install` from the Examp
     [CommonGameCenter startAuthenticationWithCompletion:^(BOOL authenticated, NSError *error) {
         // game center started either offline or online
     }];
-    
+
 ## Step 2
+    #import CommonGameCenter.h 
+
+## Step 3
     // Obtain score from leaderboard (returns GKScore)
     [CommonGameCenter obtainScoreForLeaderboard:@"My-Leaderboard"]
     
