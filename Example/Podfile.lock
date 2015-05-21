@@ -30,22 +30,18 @@ PODS:
     - AFNetworking
     - Canvas
     - DateTools
-  - CommonUtilsGame (1.0.1):
+  - CommonUtilsGame (1.0.0):
     - CommonUtils
   - DateTools (1.5.0)
 
 DEPENDENCIES:
-  - CommonUtilsGame (from `../`)
-
-EXTERNAL SOURCES:
-  CommonUtilsGame:
-    :path: ../
+  - CommonUtilsGame
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
   Canvas: eb861e3b555d032648146c8ffda1a5dea40059ca
   CommonUtils: 00c36466b7995c3d49c299e7e8bca2991082a778
-  CommonUtilsGame: 311f7d30e0db56a54f9e545ae279b733b6a86bf6
+  CommonUtilsGame: 11bd9526fe0467bf5a203dfa82c0de0ca760dbfe
   DateTools: b93a2c2017747329c6077c7d7e8a75106e23d0d7
 
 COCOAPODS: 0.35.0
