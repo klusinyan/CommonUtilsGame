@@ -2,16 +2,30 @@
 //  Copyright (c) 2014 Karen Lusinyan. All rights reserved.
 
 #import "AppDelegate.h"
-#import "DirectoryUtils.h"
+
+#import "CommonGameCenter.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    //*******************************SETUP GAME CENTER*******************************//
+    // Step 1 create Leaderboard
+    // If you already setup leaderboard in iTunesConnect -> pass the leaderboard's identifier
+    static NSString * LeaderboardIdentifier = @"My-Leaderboard";
     
-    //DebugLog(@"bundle:name %@", [DirectoryUtils bundleWithName:@"CommonUtilsGame.bundle"]);
-    //UIImage *image = [DirectoryUtils imageWithName:@"defaultPhoto" bundleName:@"CommonUtilsGame.bundle"];
+    //*******************************SETUP GAME CENTER*******************************//
+    [CommonGameCenter createLeaderboardIfNotExists:LeaderboardIdentifier attributes:nil];
+    
+    // ... more leaderboars
+    
+    // Step 2 start managing
+    [CommonGameCenter startAuthenticationWithCompletion:^(BOOL authenticated, NSError *error) {
+        // game center started either offline or online
+    }];
+    
+    // Step 3 That's it. Enjoy
+    //*******************************SETUP GAME CENTER*******************************//
     
     return YES;
 }
