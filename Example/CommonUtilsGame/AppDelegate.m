@@ -10,21 +10,17 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     //*******************************SETUP GAME CENTER*******************************//
-    // Step 1 create Leaderboard
     // If you already setup leaderboard in iTunesConnect -> pass the leaderboard's identifier
+    
     static NSString * LeaderboardIdentifier = @"My-Leaderboard";
     
-    //*******************************SETUP GAME CENTER*******************************//
     [CommonGameCenter createLeaderboardIfNotExists:LeaderboardIdentifier attributes:nil];
     
-    // ... more leaderboars
+    // ... setup more leaderboars
     
-    // Step 2 start managing
     [CommonGameCenter startAuthenticationWithCompletion:^(BOOL authenticated, NSError *error) {
         // game center started either offline or online
     }];
-    
-    // Step 3 That's it. Enjoy
     //*******************************SETUP GAME CENTER*******************************//
     
     return YES;
