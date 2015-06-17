@@ -21,27 +21,31 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - Canvas (0.1.2)
-  - CommonUtils (1.5.6):
+  - CommonUtils (1.5.7):
     - AFNetworking
     - Canvas
-    - CommonUtils/no-arc (= 1.5.6)
+    - CommonUtils/no-arc (= 1.5.7)
     - DateTools
-  - CommonUtils/no-arc (1.5.6):
+  - CommonUtils/no-arc (1.5.7):
     - AFNetworking
     - Canvas
     - DateTools
-  - CommonUtilsGame (1.0.0):
+  - CommonUtilsGame (1.0.2):
     - CommonUtils
   - DateTools (1.5.0)
 
 DEPENDENCIES:
-  - CommonUtilsGame
+  - CommonUtilsGame (from `../`)
+
+EXTERNAL SOURCES:
+  CommonUtilsGame:
+    :path: ../
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
   Canvas: eb861e3b555d032648146c8ffda1a5dea40059ca
-  CommonUtils: 00c36466b7995c3d49c299e7e8bca2991082a778
-  CommonUtilsGame: 11bd9526fe0467bf5a203dfa82c0de0ca760dbfe
+  CommonUtils: 047ba6cae7cb5a39bbf13ffe2877e091ab4ec2a9
+  CommonUtilsGame: 803487b93a530b244fdf2b8fab68e23344822d51
   DateTools: b93a2c2017747329c6077c7d7e8a75106e23d0d7
 
 COCOAPODS: 0.35.0
